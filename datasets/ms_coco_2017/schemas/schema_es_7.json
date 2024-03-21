@@ -1,0 +1,26 @@
+{
+    "dynamic": false,
+
+    "properties": {
+
+        "id": {"type": "integer"},
+        "deleted": {"type": "boolean"},
+        "date_captured": {"type": "date", "format": "yyyy-MM-dd HH:mm:ss"},
+
+        "license": {"properties": {
+            "name": {"type": "text"}
+        }},
+
+        "captions": {"type": "text", "fielddata": true},
+
+        "categories": {"type": "nested", "properties": {
+
+            "iscrowd": {"type": "boolean"},
+            "category": {"type": "keyword"},
+            "supercategory": {"type": "keyword"},
+            "count": {"type": "integer"},
+            "supercount": {"type": "integer"}
+
+        }}
+
+}}
