@@ -5,6 +5,7 @@ from collections import defaultdict
 
 OUTPUTPATH = "ms_coco_2017.ndjson"
 
+# For all files
 # .images
 # {
 #   "license": 3,

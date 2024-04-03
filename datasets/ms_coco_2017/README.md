@@ -1,6 +1,6 @@
 #### Dataset
 
-ms_coco_2017.ndjson has been generated from the official MS COCO 2017 dataset, without the person keypoints, using the convertisor.py  
+ms_coco_2017.ndjson has been generated from the official MS COCO 2017 dataset, without the person keypoints, using the convertor.py  
   
 Full dataset is available here:
 ```
