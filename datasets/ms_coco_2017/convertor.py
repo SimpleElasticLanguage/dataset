@@ -147,6 +147,11 @@ def get_instances(data):
         obj["category"] = category["name"]
         obj["supercategory"] = category["supercategory"]
         obj["iscrowd"] = obj["iscrowd"] == 1
+
+        # Protection against segmentation dict
+        if "segmentation" in obj and not isinstance(obj["segmentation"], list):
+            del obj["segmentation"]
+
         annotations[anno["image_id"]].append(obj)
 
     for iid, categories in annotations.items():
