@@ -23,7 +23,17 @@
                  "category": {"type": "string", "index": "not_analyzed"},
                  "supercategory": {"type": "string", "index": "not_analyzed"},
                  "count": {"type": "integer"},
-                 "supercount": {"type": "integer"}
+                 "supercount": {"type": "integer"},
+
+                 "color": {"properties": {
+
+                     "pantone": {"type": "string", "index": "not_analyzed"},
+                     "css3": {"type": "string", "index": "not_analyzed"},
+                     "css2": {"type": "string", "index": "not_analyzed"},
+                     "hexa": {"type": "string", "index": "not_analyzed"}
+
+                 }}
+
 
              }}
 
